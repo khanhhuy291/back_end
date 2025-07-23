@@ -1,0 +1,19 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /back_end
+
+spring:
+  datasource:
+    url: "jdbc:mysql://localhost:3306/back_end?useSSL=false&serverTimezone=Asia/Ho_Chi_Minh"
+    username: root
+    password: Ptit2022
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+jwt:
+  signerKey: LAsNueQXM3RR0kgNWr1nOVvl83Bnr7VHxy/FUiUQPxECPQuDMEjaQsXR2tfjAI+N
